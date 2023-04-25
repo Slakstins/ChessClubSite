@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { TourComponent } from './tour/tour.component';
 import { PerfComponent } from './perf/perf.component';
 import { TitleComponent } from './title/title.component';
+import { AboutComponent } from './about/about.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
@@ -16,12 +19,15 @@ import { TitleComponent } from './title/title.component';
     HeaderComponent,
     TourComponent,
     PerfComponent,
-    TitleComponent
+    TitleComponent,
+    AboutComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

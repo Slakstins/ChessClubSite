@@ -5,9 +5,9 @@ img{
   margin: 0 auto;
 }
 
-i {
+#burger {
   position: fixed;
   left: 10%;
-  top: 15px;
+  top: 5px;
   font-size: 2em;
 }

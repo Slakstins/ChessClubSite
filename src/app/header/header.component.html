@@ -1,3 +1,9 @@
-<div class="text-center"><i class="bi bi-list"></i>
+<div class="text-center">
+<button [routerLink]="['/nav']" id="burger" class="hamburger hamburger--collapse " (click)="burgerClickEvent()" 
+[ngClass]="status ? 'is-active' : ''" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
   <img src="../../assets/chesslogo.jpg" alt="All American Chess Club logo" class="">
 </div>
