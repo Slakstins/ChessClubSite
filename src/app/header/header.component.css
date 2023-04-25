@@ -1,0 +1,13 @@
+img{
+  width: 100%;
+  max-width: 125px;
+  height: auto;
+  margin: 0 auto;
+}
+
+i {
+  position: fixed;
+  left: 10%;
+  top: 15px;
+  font-size: 2em;
+}
