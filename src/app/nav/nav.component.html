@@ -1,3 +1,3 @@
-<app-title [routerLink]="['/tour']" (click)='collapseNav()' [title]="n1"></app-title>
-<app-title [routerLink]="['/about']" (click)='collapseNav()'[title]="n2"></app-title>
-<app-title [title]="n3" (click)='collapseNav()'></app-title>
+<app-title role="button" [routerLink]="['/tour']" (click)='collapseNav()' [zoom]='true' [title]="n1"></app-title>
+<app-title role="button"[routerLink]="['/about']" (click)='collapseNav()' [zoom]='true'[title]="n2"></app-title>
+<app-title role="button"[title]="n3" [zoom]='true' (click)='collapseNav()'></app-title>

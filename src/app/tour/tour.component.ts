@@ -4,7 +4,7 @@ import { Perf } from '../performance';
 @Component({
   selector: 'app-tour',
   templateUrl: './tour.component.html',
-  styleUrls: ['./tour.component.css', '../app.component.css']
+  styleUrls: ['./tour.component.css']
 })
 export class TourComponent {
   title = "TOUR";

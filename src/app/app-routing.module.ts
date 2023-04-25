@@ -6,9 +6,9 @@ import { NavComponent } from './nav/nav.component';
 
 const routes: Routes = [
   {path:'', redirectTo:"tour", pathMatch:"full"},
-  {path: "tour", component: TourComponent},
+  {path: "tour", component: TourComponent, data: {animation: 'isLeft'}},
 {path:"about", component: AboutComponent, data: {animation: 'isLeft'}},
-{path:"nav", component: NavComponent, data: {animation: 'isLeft'}}];
+{path:"nav", component: NavComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
