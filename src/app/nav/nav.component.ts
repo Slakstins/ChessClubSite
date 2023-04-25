@@ -9,5 +9,8 @@ export class NavComponent {
   n1 = "TOUR"
   n2 = "ABOUT"
   n3 = "CONTACT"
+  public collapseNav () {
+    document.getElementById("burger")?.classList.remove("is-active");
+  }
 
 }

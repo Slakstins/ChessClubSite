@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +9,22 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HeaderComponent {
   imageWidth = 100;
-  constructor(private modalService: NgbModal) {
+  constructor(private modalService: NgbModal, private location: Location) {
   }
   public open(modal: any): void {
     this.modalService.open(modal);
   }
-  status: boolean = false;
+
   burgerClickEvent() {
-    this.status = !this.status;
+    const burg = document.getElementById("burger");
+    if (burg?.classList.contains("is-active")){
+      burg.classList.remove("is-active");
+      this.location.back();
+    }
+    else {
+      burg?.classList.add("is-active");
+    }
+
+
   }
 }
