@@ -1,1 +1,12 @@
-<div *ngIf="performance">{{performance.venue}}</div>
+<div class="container bg-white mb-3 pt-2 pb-2 " *ngIf="performance">
+    <div class="row">
+        <div class="col-4 date">
+            <span class="date">{{(performance.date.toLocaleString('default', {month: 'short'}) | uppercase) + " " + performance.date.getDay()}} </span><br>
+            <span class="time">{{performance.date.toLocaleTimeString([], {hour: 'numeric', minute:'2-digit'}) | lowercase}}</span>
+        </div>
+        <div class="col-6">
+            <span class="venue">{{performance.venue}}</span> <br>
+            <span class="city">{{performance.city + ", " + performance.state}}</span>
+        </div>
+    </div>
+</div>

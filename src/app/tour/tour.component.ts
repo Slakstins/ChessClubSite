@@ -4,9 +4,10 @@ import { Perf } from '../performance';
 @Component({
   selector: 'app-tour',
   templateUrl: './tour.component.html',
-  styleUrls: ['./tour.component.css']
+  styleUrls: ['./tour.component.css', '../app.component.css']
 })
 export class TourComponent {
+  title = "TOUR";
   performances: Perf[]= [{
     venue: "The 909",
     city: "Muncie",

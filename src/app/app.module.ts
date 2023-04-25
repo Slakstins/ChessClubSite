@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { TourComponent } from './tour/tour.component';
 import { PerfComponent } from './perf/perf.component';
+import { TitleComponent } from './title/title.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { PerfComponent } from './perf/perf.component';
     AppComponent,
     HeaderComponent,
     TourComponent,
-    PerfComponent
+    PerfComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

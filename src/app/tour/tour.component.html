@@ -1,7 +1,11 @@
-<div class="light-gray">
-  <h1 class="text-center">TOUR</h1>
-  <div *ngFor="let perf of performances">
+<div class="light-gray ps-3 pe-3 pb-3">
+  <app-title [title]="title"></app-title>
+  <div class="max-width" *ngFor="let perf of performances">
     <app-perf [performance]="perf">
     </app-perf>
+  </div>
+  <div class="text-center">
+  <a href="https://www.instagram.com/allamericanchessclub/" class="pe-5"><i class="bi bi-instagram"></i></a>
+  <a href="https://www.facebook.com/AllAmericanChessClubBand" class="pb-5"><i class="bi bi-facebook"></i></a>
   </div>
 </div>
