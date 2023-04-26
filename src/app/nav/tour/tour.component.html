@@ -1,0 +1,11 @@
+<div *ngIf="allDataFetched" class=" ps-3 pe-3 pb-3">
+  <app-title [title]="title"></app-title>
+  <div class="max-width" *ngFor="let perf of performances">
+    <app-perf [performance]="perf">
+    </app-perf>
+  </div>
+  <div class="text-center">
+  <app-socials></app-socials>
+
+  </div>
+</div>

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RoutingDataService } from './routing-data.service';
+import { PerfService } from '../../perf.service';
 
-describe('RoutingDataService', () => {
-  let service: RoutingDataService;
+describe('PerfService', () => {
+  let service: PerfService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(RoutingDataService);
+    service = TestBed.inject(PerfService);
   });
 
   it('should be created', () => {

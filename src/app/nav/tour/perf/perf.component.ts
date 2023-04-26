@@ -1,6 +1,6 @@
 import { NONE_TYPE } from '@angular/compiler';
 import { Component, Input } from '@angular/core';
-import { Perf } from '../performance';
+import { Perf } from './perf.interface';
 
 @Component({
   selector: 'app-perf',

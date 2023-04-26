@@ -5,13 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
-import { TourComponent } from './tour/tour.component';
-import { PerfComponent } from './perf/perf.component';
+import { TourComponent } from './nav/tour/tour.component';
+import { PerfComponent } from './nav/tour/perf/perf.component';
 import { TitleComponent } from './title/title.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './nav/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
-
+import { ContactComponent } from './nav/contact/contact.component';
+import { SocialsComponent } from './socials/socials.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AdminComponent } from './nav/tour/admin/admin.component';
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,13 +26,19 @@ import { NavComponent } from './nav/nav.component';
     PerfComponent,
     TitleComponent,
     AboutComponent,
-    NavComponent
+    NavComponent,
+    ContactComponent,
+    SocialsComponent,
+    AdminComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbDatepickerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
