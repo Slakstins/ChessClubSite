@@ -1,4 +1,7 @@
-<div class="container bg-gray mb-3 pt-2 pb-2 " *ngIf="performance">
+<div class="container bg-gray mb-3 pt-2 pb-2 " *ngIf="performance && show">
+    <div *ngIf="showDelete" role="button" (click)="delete()">
+        <i class="bi bi-trash" ></i>
+    </div>
     <div class="row">
         <div class="col-4 date">
             <span class="date">{{(performance.date.toLocaleString('default', {month: 'short'}) | uppercase) + " " + performance.date.getDate()}} </span><br>
@@ -9,4 +12,5 @@
             <span class="city">{{performance.city + ", " + performance.state}}</span>
         </div>
     </div>
+
 </div>

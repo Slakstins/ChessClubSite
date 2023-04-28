@@ -1,20 +1,27 @@
-import { Component} from '@angular/core';
+import { Component, OnDestroy} from '@angular/core';
 import { PerfService } from 'src/app/perf.service';
 import { Perf } from '../perf/perf.interface';
 import { MyDate } from './my-date';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })
-export class AdminComponent{
+export class AdminComponent implements OnDestroy {
   constructor(private service: PerfService){}
+  ngOnDestroy(): void {
+    if (this.subscription){
+      this.subscription.unsubscribe();
+    }
+  }
   state: string | undefined;
   city: string | undefined;
   venue: string | undefined;
   date: MyDate | undefined;
   time: string | undefined;
+  subscription!: Subscription;
   submit() {
     console.log(this.state);
     if (this.state == undefined || this.city == undefined ||
@@ -23,16 +30,14 @@ export class AdminComponent{
         alert("undefined values!")
         return;
       }
-    alert(this.date.month);
     var d = this.parseFullDate(this.time, this.date);
-    alert(d?.toDateString());
    
     if (d == null){
       alert("need to add date")
       return;
     }
 
-    this.service.post(
+    this.subscription = this.service.post(
       {
         state: this.state,
         city: this.city,
@@ -42,7 +47,7 @@ export class AdminComponent{
     ).subscribe(
       (response) => {
         if (response){
-          alert("submitted successfully")
+          location.reload();
         }
       },
       (error) => { console.log(error); }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { RouterOutlet } from '@angular/router';
+import { ChildrenOutletContexts, RouterOutlet } from '@angular/router';
 import {fader} from './route-animations'
 
 
@@ -17,12 +17,13 @@ import {fader} from './route-animations'
 })
 export class AppComponent {
   title = 'chess-club-app';
-  constructor(private modalService: NgbModal) {
+  constructor(private modalService: NgbModal, private contexts: ChildrenOutletContexts) {
   }
   public open(modal: any): void {
     this.modalService.open(modal);
   }
   prepareRoute(outlet: RouterOutlet) {
-  return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  // return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
 }
 }

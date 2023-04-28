@@ -3,4 +3,5 @@ export interface Perf {
     venue: string;
     city: string;
     state: string;
+    _id?: any;
 }

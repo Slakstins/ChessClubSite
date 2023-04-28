@@ -8,9 +8,9 @@ import { AdminComponent } from './nav/tour/admin/admin.component';
 
 const routes: Routes = [
   {path:'', redirectTo:"tour", pathMatch:"full"},
-  {path: "tour", component: TourComponent, data: {animation: 'isLeft'}},
-{path:"about", component: AboutComponent, data: {animation: 'isLeft'}},
-{path:"contact", component: ContactComponent, data: {animation: 'isLeft'}},
+  {path: "tour", component: TourComponent},
+{path:"about", component: AboutComponent},
+{path:"contact", component: ContactComponent},
 {path:"nav", component: NavComponent},
 {path:"admin", component: AdminComponent}
 ];

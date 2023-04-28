@@ -1,9 +1,4 @@
-img{
-  width: 100%;
-  max-width: 125px;
-  height: auto;
-  margin: 0 auto;
-}
+
 
 #burger {
   position: fixed;
@@ -11,3 +6,29 @@ img{
   top: 5px;
   font-size: 2em;
 }
+
+.mt {
+  margin-top: 10px;
+}
+.tabs > span{
+  font-size: 1.5em;
+  font-weight: 500;
+  display: inline-block;
+  width: 33%;
+  color: white;
+  
+}
+
+.tabs {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 500px;
+  background-color: rgb(77, 77, 77);
+  border-radius: 0 0 15px 15px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+

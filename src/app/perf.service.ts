@@ -15,10 +15,10 @@ export class PerfService {
     return this.http.get<Perf[]>(this.url + "perfs");
   }
   public post(data: Perf) {
-    return this.http.post(this.url + "add_perf", data);
+    return this.http.post(this.url + "perf", data);
   }
-  public delete() { 
-    return this.http.delete(this.url); 
+  public delete(id: string) { 
+    return this.http.delete(this.url + "perf/" + id); 
   } 
   public put(data: Perf) { 
     return this.http.put(this.url, data); 

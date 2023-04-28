@@ -1,0 +1,6 @@
+clean up mongoose functions.
+Test sorting of perfs.
+Add deletion to admin route.
+Add photos of us to the about page
+make the nav switch to tabs at a certain size
+add error messages when data is not obtained

@@ -1,26 +1,31 @@
-
-<form class="ms-4 me-4">
-  <div class="form-group">
-    <label for="input1">State</label>
-    <input [(ngModel)]="state" name="state" class="form-control" id="input1" value="IN" placeholder="State">
+<div class="container">
+  <div class="row">
+    <form class="ms-4 me-4 col-5">
+      <div class="form-group">
+        <label for="input1">State</label>
+        <input [(ngModel)]="state" name="state" class="form-control" id="input1" value="IN" placeholder="State">
+      </div>
+      <div class="form-group">
+        <label for="input2">City</label>
+        <input [(ngModel)]="city" name="city" class="form-control" id="input2" placeholder="City">
+      </div>
+      <div class="form-group">
+        <label for="input1">Venue</label>
+        <input [(ngModel)]="venue" name="venue" class="form-control" id="input1" placeholder="Venue">
+      </div>
+      <div class=" form-group">
+        <label for="input1">Date</label>
+        <input class="form-control" [(ngModel)]="date" name="date" type="text" ngbDatepicker #d="ngbDatepicker" />
+        <button (click)="d.toggle()"><i class="bi bi-calendar"></i></button>
+      </div>
+      <div class="form-group">
+        <label for="input2">Time</label>
+        <input [(ngModel)]="time" name="time" class="form-control" id="input2" aria-describedby="timeHelp"
+          placeholder="7:00 PM">
+        <small id="timeHelp" class="form-text text-muted">Example format: 7:00 PM</small>
+      </div>
+      <button type="submit" (click)="submit()" class="btn btn-primary">Submit</button>
+    </form>
+    <app-tour class="col-6" [showDelete]="true"></app-tour>
   </div>
-  <div class="form-group">
-    <label for="input2">City</label>
-    <input  [(ngModel)]="city" name="city" class="form-control" id="input2" placeholder="City">
-  </div>
-<div class="form-group">
-    <label for="input1">Venue</label>
-    <input [(ngModel)]="venue" name="venue" class="form-control" id="input1" placeholder="Venue">
 </div>
-<div class=" form-group">
-    <label for="input1">Date</label>
-    <input class="form-control" [(ngModel)]="date" name="date" type="text" ngbDatepicker #d="ngbDatepicker"/>
-    <button  (click)="d.toggle()"><i class="bi bi-calendar"></i></button>
-</div>
-<div class="form-group">
-    <label for="input2">Time</label>
-    <input [(ngModel)]="time" name="time" class="form-control" id="input2" aria-describedby="timeHelp" placeholder="7:00 PM">
-    <small id="timeHelp" class="form-text text-muted">Example format: 7:00 PM</small>
-  </div>
-  <button type="submit" (click)="submit()" class="btn btn-primary">Submit</button>
-</form>
