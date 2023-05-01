@@ -14,7 +14,7 @@ import { NavComponent } from './nav/nav.component';
 import { ContactComponent } from './nav/contact/contact.component';
 import { SocialsComponent } from './socials/socials.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { AdminComponent } from './nav/tour/admin/admin.component';
+import { AdminComponent } from './admin/admin.component';
 import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 

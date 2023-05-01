@@ -2,9 +2,11 @@
 
 #burger {
   position: fixed;
-  left: 10%;
+  left: max(5%, 10px);
   top: 5px;
   font-size: 2em;
+  background-color: white;
+  padding: 10px;
 }
 
 .mt {

@@ -1,6 +1,6 @@
 import { Component, OnDestroy} from '@angular/core';
 import { PerfService } from 'src/app/perf.service';
-import { Perf } from '../perf/perf.interface';
+import { Perf } from '../nav/tour/perf/perf.interface';
 import { MyDate } from './my-date';
 import { Subscription } from 'rxjs';
 

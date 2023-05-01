@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {fader} from '../../route-animations'
+import { TabUnderlineService } from 'src/app/tab-underline.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,7 +13,12 @@ import {fader} from '../../route-animations'
     // stepper
   ]
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   title = "CONTACT";
+  constructor(private undelineService: TabUnderlineService){
 
+  }
+  ngOnInit(): void {
+    this.undelineService.underline("contact-tab");
+  }
 }

@@ -4,7 +4,7 @@ import { TourComponent } from './nav/tour/tour.component';
 import { AboutComponent } from './nav/about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { ContactComponent } from './nav/contact/contact.component';
-import { AdminComponent } from './nav/tour/admin/admin.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {path:'', redirectTo:"tour", pathMatch:"full"},

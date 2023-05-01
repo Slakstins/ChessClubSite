@@ -8,12 +8,7 @@ import {fader} from './route-animations'
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [ // <-- add your animations here
-    fader
-    // slider
-    // transformer
-    // stepper
-  ]
+
 })
 export class AppComponent {
   title = 'chess-club-app';
@@ -22,8 +17,5 @@ export class AppComponent {
   public open(modal: any): void {
     this.modalService.open(modal);
   }
-  prepareRoute(outlet: RouterOutlet) {
-  // return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
-  return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
-}
+
 }

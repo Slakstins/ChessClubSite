@@ -36,9 +36,4 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  underline(id: string){
-    document.querySelectorAll(".tabs > span").forEach((el) =>
-    el.classList.remove("underline"));
-    document.getElementById(id)?.classList.add("underline");
-  }
 }

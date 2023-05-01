@@ -18,6 +18,8 @@ export const fader =
         style({
           position: 'absolute',
           left: 0,
+          // right: 0,
+          // bottom: 0,
           width: '100%',
           opacity: 0,
           transform: 'scale(0) translateY(100%)',

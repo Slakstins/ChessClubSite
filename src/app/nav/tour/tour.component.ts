@@ -3,6 +3,7 @@ import { Perf } from './perf/perf.interface';
 import { PerfService } from 'src/app/perf.service';
 import { Observable, Subscription } from 'rxjs';
 import {fader} from '../../route-animations'
+import { TabUnderlineService } from 'src/app/tab-underline.service';
 
 @Component({
   selector: 'app-tour',
@@ -16,15 +17,16 @@ import {fader} from '../../route-animations'
   ]
 })
 export class TourComponent implements OnInit, OnDestroy{
-  constructor(private service : PerfService){
+  constructor(private service : PerfService, private undelineService: TabUnderlineService){
 
   }
-
   @Input() showDelete: boolean = false;
   subscription!: Subscription;
 
   allDataFetched = false;
+  failedDataLoad = false;
   ngOnInit(): void {
+    this.undelineService.underline("tour-tab");
     this.subscription = this.service.get().subscribe(
       (response) => {
         response.forEach(perf => {
@@ -34,7 +36,8 @@ export class TourComponent implements OnInit, OnDestroy{
         this.allDataFetched = true;
         console.log(this.performances);
       },
-      (error) => { console.log(error); }
+      (error) => { console.log(error);
+      this.failedDataLoad = true}
     );
   }
   title = "TOUR";

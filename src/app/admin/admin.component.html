@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <form class="ms-4 me-4 col-5">
+    <form class="ms-4 me-4 col-sm-11 col-lg-5">
       <div class="form-group">
         <label for="input1">State</label>
         <input [(ngModel)]="state" name="state" class="form-control" id="input1" value="IN" placeholder="State">
@@ -26,6 +26,6 @@
       </div>
       <button type="submit" (click)="submit()" class="btn btn-primary">Submit</button>
     </form>
-    <app-tour class="col-6" [showDelete]="true"></app-tour>
+    <app-tour class="col-sm-11 col-lg-5" [showDelete]="true"></app-tour>
   </div>
 </div>

@@ -7,6 +7,10 @@
     font-size: 1.15em;
 }
 
+.reduce-width{
+    width: fit-content;
+
+}
 
 .city {
     font-size: 0.75em;
@@ -20,4 +24,9 @@
  }
  .bg-gray{
     background-color: lightgray;
+ }
+ i {
+    font-size: 1.5em;
+    color: red;
+    width: fit-content;
  }

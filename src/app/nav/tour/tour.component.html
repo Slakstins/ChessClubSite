@@ -1,16 +1,18 @@
-<div  class="ps-3 pe-3 pb-3 bg-image text-center">
-  <img src="../../assets/chesslogo.jpg"  alt="All American Chess Club logo" *ngIf="!showDelete"
-    class="">
+<div class="ps-3 pe-3 pb-3 bg-image text-center">
+  <img src="../../assets/chesslogo.jpg" alt="All American Chess Club logo" *ngIf="!showDelete" class="">
 
   <app-title [title]="title"></app-title>
+  <div class="mb-4"></div>
   <div *ngIf="allDataFetched" [@fadeInTrigger]>
-  <div  class="max-width" *ngFor="let perf of performances" >
-    <app-perf [showDelete]="showDelete" [performance]="perf">
-    </app-perf>
+      <div  class="max-width" *ngFor="let perf of performances">
+        <app-perf [showDelete]="showDelete" [performance]="perf">
+        </app-perf>
+      </div>
   </div>
-</div>
+  <p *ngIf="allDataFetched && !performances" class="bg-white">No upcoming tours</p>
+  <p *ngIf="failedDataLoad" class="bg-warning">Error loading tours</p>
   <div class="text-center">
-  <!-- <app-socials></app-socials> -->
+    <!-- <app-socials></app-socials> -->
 
   </div>
 </div>
