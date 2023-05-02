@@ -8,6 +8,6 @@ div {
 }
 
 #carousel{
-    width: 600px;
+    width: min(600px, 100%);
     margin: 0 auto;
 }
