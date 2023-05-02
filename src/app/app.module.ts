@@ -17,6 +17,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AdminComponent } from './admin/admin.component';
 import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { ListenComponent } from './nav/listen/listen.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     ContactComponent,
     SocialsComponent,
-    AdminComponent
+    AdminComponent,
+    ListenComponent
   ],
   imports: [
     HttpClientModule,

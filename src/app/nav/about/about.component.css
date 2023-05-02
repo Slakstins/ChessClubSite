@@ -6,3 +6,8 @@ p {
 div {
     text-align: center;
 }
+
+#carousel{
+    width: 600px;
+    margin: 0 auto;
+}

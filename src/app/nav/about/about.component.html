@@ -1,2 +1,52 @@
 <app-title [title]="title"></app-title>
-<div [@fadeInTrigger]><p >All American Chess Club from Terre Haute, IN combine emo, math rock, punk, and other genres to bring you their original take on Midwest Emo.</p></div>
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../../assets/bandpics/brandon-scream.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Brandon Rupska</h5>
+        <p>Guitar/Vocals</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/bandpics/marty.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Marty Ladd Jr.</h5>
+        <p>Bass/Vocals</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/bandpics/andrew.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Andrew Garrett</h5>
+        <p>Drums</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/bandpics/seth.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Seth Lakstins</h5>
+        <p>Synth</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div [@fadeInTrigger]>
+    <p>All American Chess Club from Terre Haute, IN combine emo, math rock, punk, and other genres to bring you their
+        original take on Midwest Emo.</p>
+</div>
+
