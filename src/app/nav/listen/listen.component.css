@@ -1,0 +1,9 @@
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .youtube-video {
+    width: 100%;
+  }
+}
