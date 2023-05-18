@@ -8,8 +8,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ListenComponent } from './nav/listen/listen.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:"tour", pathMatch:"full"},
-  {path: "tour", component: TourComponent},
+  {path: "", component: TourComponent},
 {path:"about", component: AboutComponent},
 {path:"contact", component: ContactComponent},
 {path:"nav", component: NavComponent},

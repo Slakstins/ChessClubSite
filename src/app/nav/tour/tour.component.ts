@@ -27,21 +27,28 @@ export class TourComponent implements OnInit, OnDestroy{
   failedDataLoad = false;
   ngOnInit(): void {
     this.undelineService.underline("tour-tab");
-    this.subscription = this.service.get().subscribe(
-      (response) => {
-        response.forEach(perf => {
-          perf.date = new Date(perf.date);
-        });
-        this.performances = response;
-        this.allDataFetched = true;
-        console.log(this.performances);
-      },
-      (error) => { console.log(error);
-      this.failedDataLoad = true}
-    );
+    this.allDataFetched = true;
+    // this.subscription = this.service.get().subscribe(
+    //   (response) => {
+    //     response.forEach(perf => {
+    //       perf.date = new Date(perf.date);
+    //     });
+    //     this.performances = response;
+    //     this.allDataFetched = true;
+    //     console.log(this.performances);
+    //   },
+    //   (error) => { console.log(error);
+    //   this.failedDataLoad = true}
+    // );
   }
   title = "TOUR";
-  performances!: Perf[];
+  performances: Perf[] = [
+    {city: "Indiana", date: new Date(2023, 5, 13, 19), state: "IN", venue: "Tree House"},
+    {city: "Indianapolis", date: new Date(2023, 5, 23, 19), state: "IN", venue: "Healer"},
+    {city: "Indianapolis", date: new Date(2023, 6, 1, 19), state: "IN", venue: "Tree House"},
+    {city: "Indianapolis", date: new Date(2023, 7, 6, 19), state: "IN", venue: "Healer"},
+
+  ]
 
   ngOnDestroy(): void {
     if (this.subscription){
