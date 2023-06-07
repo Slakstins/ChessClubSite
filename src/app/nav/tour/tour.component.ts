@@ -43,10 +43,10 @@ export class TourComponent implements OnInit, OnDestroy{
   }
   title = "TOUR";
   performances: Perf[] = [
-    {city: "Indiana", date: new Date(2023, 5, 13, 19), state: "IN", venue: "Tree House"},
-    {city: "Indianapolis", date: new Date(2023, 5, 23, 19), state: "IN", venue: "Healer"},
-    {city: "Indianapolis", date: new Date(2023, 6, 1, 19), state: "IN", venue: "Tree House"},
-    {city: "Indianapolis", date: new Date(2023, 7, 6, 19), state: "IN", venue: "Healer"},
+    {city: "Indiana", date: new Date(2023, 6 - 1, 16, 19), state: "IN", venue: "Tree House"},
+    {city: "Indianapolis", date: new Date(2023, 6 - 1, 23, 19), state: "IN", venue: "Healer"},
+    {city: "Indianapolis", date: new Date(2023, 7 - 1, 1, 19), state: "IN", venue: "Tree House"},
+    {city: "Indianapolis", date: new Date(2023, 8 - 1, 6, 19), state: "IN", venue: "Healer"},
 
   ]
 
