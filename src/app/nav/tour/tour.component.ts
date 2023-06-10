@@ -4,6 +4,7 @@ import { PerfService } from 'src/app/perf.service';
 import { Observable, Subscription } from 'rxjs';
 import {fader} from '../../route-animations'
 import { TabUnderlineService } from 'src/app/tab-underline.service';
+import { TourFileReaderService } from 'src/app/tour-file-reader.service';
 
 @Component({
   selector: 'app-tour',
@@ -17,7 +18,7 @@ import { TabUnderlineService } from 'src/app/tab-underline.service';
   ]
 })
 export class TourComponent implements OnInit, OnDestroy{
-  constructor(private service : PerfService, private undelineService: TabUnderlineService){
+  constructor(private tourFileReader: TourFileReaderService, private service : PerfService, private undelineService: TabUnderlineService){
 
   }
   @Input() showDelete: boolean = false;
@@ -42,13 +43,7 @@ export class TourComponent implements OnInit, OnDestroy{
     // );
   }
   title = "TOUR";
-  performances: Perf[] = [
-    {city: "Indiana", date: new Date(2023, 6 - 1, 16, 19), state: "IN", venue: "Tree House"},
-    {city: "Indianapolis", date: new Date(2023, 6 - 1, 23, 19), state: "IN", venue: "Healer"},
-    {city: "Indianapolis", date: new Date(2023, 7 - 1, 1, 19), state: "IN", venue: "Tree House"},
-    {city: "Indianapolis", date: new Date(2023, 8 - 1, 6, 19), state: "IN", venue: "Healer"},
-
-  ]
+  performances: Perf[] = this.tourFileReader.getTourData();
 
   ngOnDestroy(): void {
     if (this.subscription){
