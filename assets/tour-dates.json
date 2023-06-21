@@ -1,6 +1,4 @@
-    [{"city": "Indiana", "state": "IN", "venue": "Tree House",
-    "year": 2023, "month": 6, "date": 16, "hour": 19},
-    {"city": "Indianapolis",  "state": "IN", "venue": "Healer",
+    [{"city": "Indianapolis",  "state": "IN", "venue": "Healer",
     "year": 2023, "month": 6, "date": 23, "hour": 19},
     {"city": "Indianapolis",  "state": "IN", "venue": "Tree House",
     "year": 2023, "month": 7, "date": 1, "hour": 19},
