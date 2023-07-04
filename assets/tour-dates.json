@@ -2,19 +2,10 @@
         {
             "city": "Indianapolis",
             "state": "IN",
-            "venue": "Healer",
-            "year": 2023,
-            "month": 6,
-            "date": 23,
-            "hour": 19
-        },
-        {
-            "city": "Indianapolis",
-            "state": "IN",
             "venue": "Tree House",
             "year": 2023,
             "month": 7,
-            "date": 1,
+            "date": 21,
             "hour": 19
         },
         {
@@ -32,7 +23,7 @@
             "venue": "Be Here Now",
             "year": 2023,
             "month": 8,
-            "date": 19,
+            "date": 18,
             "hour": 19
         },
         {
