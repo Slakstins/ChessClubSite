@@ -26,9 +26,12 @@ export class TourComponent implements OnInit, OnDestroy{
 
   allDataFetched = false;
   failedDataLoad = false;
+  innerWidth!: number;
   ngOnInit(): void {
     this.undelineService.underline("tour-tab");
     this.allDataFetched = true;
+    this.innerWidth = window.innerWidth;
+
     // this.subscription = this.service.get().subscribe(
     //   (response) => {
     //     response.forEach(perf => {

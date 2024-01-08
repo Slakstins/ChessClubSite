@@ -1,12 +1,12 @@
 <div class="bg-img"></div>
-<div class="ps-3 pe-3 pb-3 bg-image text-center">
-  <img src="assets/bandpics/lake1.jpg" alt="All American Chess Club logo" *ngIf="!showDelete" class="">
+<div class="ps-3 pe-3 pb-3 text-center">
+  <img src="assets/bandpics/aacc-everyone.jpg" alt="All American Chess Club logo" *ngIf="!showDelete && innerWidth > 900" class="">
 
   <app-title [title]="title"></app-title>
   <div class="mb-4"></div>
   <div *ngIf="allDataFetched" [@fadeInTrigger]>
-      <div  class="max-width" *ngFor="let perf of performances">
-        <app-perf [showDelete]="showDelete" [performance]="perf">
+    <div class="max-width" *ngFor="let perf of performances">
+      <app-perf [showDelete]="showDelete" [performance]="perf">
         </app-perf>
       </div>
   </div>
