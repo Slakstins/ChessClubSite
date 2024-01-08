@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+Current Deployment Steps:
+
+update tour-dates.json
+run git add -A
+run git commit -m "updated tour dates"
+run git push
+run ng deploy
+go to github and select branch gh-pages
+add https:// before the url
