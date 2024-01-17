@@ -2,8 +2,6 @@
     "year": 2024, "month": 2, "date": 4, "hour": 19},
     {"city": "Bloomington",  "state": "IN", "venue": "The Arcadia",
     "year": 2024, "month": 3, "date": 1, "hour": 19},
-    {"city": "Muncie",  "state": "IN", "venue": "Motel Moth",
-    "year": 2024, "month": 4, "date": 6, "hour": 19},
     {"city": "Terre Haute",  "state": "IN", "venue": "Tree House",
     "year": 2024, "month": 4, "date": 20, "hour": 19},
     {"city": "Evansville",  "state": "IN", "venue": "Your Brother's Bookstore",
@@ -13,8 +11,6 @@
     {"city": "Terre Haute",  "state": "IN", "venue": "Tree House",
     "year": 2024, "month": 6, "date": 29, "hour": 19},
     {"city": "Indianapolis",  "state": "IN", "venue": "Healer",
-    "year": 2024, "month": 7, "date": 5, "hour": 19},
-    {"city": "Terre Haute",  "state": "IN", "venue": "Tree House",
-    "year": 2024, "month": 6, "date": 29, "hour": 19}
+    "year": 2024, "month": 7, "date": 5, "hour": 19}
 ]
 
