@@ -35,4 +35,4 @@ run git commit -m "updated tour dates"
 run git push
 run ng deploy
 go to github and select branch gh-pages
-add https:// before the url
+create file nam /CNAME with content: https://allamericanchessclub.com
